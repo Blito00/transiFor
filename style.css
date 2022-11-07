@@ -3,7 +3,7 @@
 :root {
     --header-height: 3rem;
     --nav-width: 73px;
-    --first-color: #0c9eb7;
+    --first-color: #5bb5b0;
     --first-color-light: #000000;
     --white-color: #F7F6FB;
     --body-font: 'Mitr', sans-serif;
@@ -40,7 +40,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    background-color: var(--white-color);
+    background-color:#b73258;
     z-index: var(--z-fixed);
     transition: .5s
 }
@@ -164,7 +164,8 @@ a {
     }
 
     .header_img img {
-        width: 45px
+        width: 45px;
+        height: 45px
     }
 
     .l-navbar {

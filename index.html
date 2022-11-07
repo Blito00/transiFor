@@ -1,107 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- BS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <!-- Iconos -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
-    <!-- Animaciones y Estilo BS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-    />
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Estilo CSS -->
-    <link rel="stylesheet" href="/style.css" />
-    <title>TransiFor</title>
-  </head>
 
-  <body id="body-pd">
-    <header class="header" id="header" style="color: #05848c">
-      <div class="header_toggle">
-        <i class="bx bx-menu" id="header-toggle"></i>
-      </div>
-      <div class="header_img"><img src="/descarga.png" /></div>
-    </header>
-    <div class="l-navbar" id="nav-bar">
-      <nav class="nav">
-        <div>
-          <a href="#" class="nav_logo">
-            <img src="/unnamed.png" width="33px" />
-            <span class="nav_logo-name">TransiFor</span>
-          </a>
-          <div class="nav_list">
-            <a href="#" class="nav_link active"
-              ><i class="bi bi-cone"></i> <span class="nav_name">Menu</span>
-            </a>
-            <a href="#" class="nav_link">
-              <i class="bx bx-user nav_icon"></i>
-              <span class="nav_name">Usuario</span>
-            </a>
-            <a href="#" class="nav_link">
-              <i class="bx bx-message-square-detail nav_icon"></i>
-              <span class="nav_name">Mensajes</span>
-            </a>
-            <a href="#" class="nav_link">
-              <i class="bx bx-folder nav_icon"></i>
-              <span class="nav_name">Ultimas denuncias</span>
-            </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TransiFor</title>
+  <link rel="icon" href="/resources/img/icono_link.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/sidebar.css">
+</head>
+
+<body style="background-color: rgb(255, 246, 230);">
+  <!-- Side-Nav -->
+  <div class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column" id="sidebar">
+    <ul class="nav flex-column text-white w-100">
+      <a href="#" class="nav-link h3 text-white my-2"><img src="/cropped-cono.png" width="45px"> TransiFor</br>
+      </a>
+      <li href="#" class="nav-link">
+        <i class="bi bi-house-fill"></i>
+        <span class="mx-2">Inicio</span>
+      </li>
+      <li href="#" class="nav-link">
+        <i class="bx bx-user"></i>
+        <span class="mx-2">Perfil</span>
+      </li>
+      <li href="" class="nav-link">
+        <i class="bi bi-gear-fill"></i>
+        <span class="mx-2">Configuracion</span>
+      </li>
+      <li href="#" class="nav-link">
+        <i class="bx bx-help-circle"></i>
+        <span class="mx-2">Ayuda</span>
+      </li>
+    </ul>
+
+    <span href="#" class="nav-link h4 w-100 mb-5">
+      <a href=""><i class="bx bxl-instagram px-2 text-white"></i></a>
+      <a href=""><i class="bx bxl-twitter px-2 text-white"></i></a>
+      <a href=""><i class="bx bxl-facebook text-white"></i></a>
+      <a href=""><i class="bx bxl-github text-white"></i></a>
+    </span>
+  </div>
+
+  <!-- Boton menú -->
+  <div class="p-1 my-container active-cont">
+    <!-- Top Nav -->
+    <nav class="navbar top-navbar navbar-light bg-secondary px-5">
+      <a class="btn border-0" id="menu-btn"><img width="30px" src="/descarga.png" alt=""></i></a>
+      <a>Bienvenido Inpector!</a>
+    </nav>
+    <!--End Top Nav -->
+    <div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Realice una denuncia
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Formulario de denuncia:</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <label for="formFile" class="form-label">Indique la marca del vehiculo:</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Seleccione una opción</option>
+                <option value="1">Alfa Romeo</option>
+                <option value="2">Audi</option>
+                <option value="3">BMW</option>
+                <option value="4">Chevrolet</option>
+                <option value="5">Citroen</option>
+                <option value="6">Fiat</option>
+                <option value="7">Ford</option>
+              </select>
+            </div>
+            <div class="modal-body">
+              <label for="exampleColorInput" class="form-label">Indique el color del vehiculo:</label>
+              <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
+                title="Choose your color">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-success">Enviar</button>
+            </div>
           </div>
         </div>
-        <a href="#" class="nav_link">
-          <i class="bx bx-log-out nav_icon"></i>
-          <span class="nav_name">Cerrar sesión</span>
-        </a>
-      </nav>
+      </div>
     </div>
-    <!--Container Main start-->
-    <div class="height-100 bg-light">
-      <h1>Bienvenido inspector!</h1>
-    </div>
-    <!--Container Main end-->
-  </body>
-  <script src="/main.js"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-    crossorigin="anonymous"
-  ></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
+<script>
+  var menu_btn = document.querySelector("#menu-btn");
+  var sidebar = document.querySelector("#sidebar");
+  var container = document.querySelector(".my-container");
+  menu_btn.addEventListener("click", () => {
+    sidebar.classList.toggle("active-nav");
+    container.classList.toggle("active-cont");
+  });
+</script>
+</body>
+
 </html>
