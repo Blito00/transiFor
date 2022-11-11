@@ -20,54 +20,53 @@ function App() {
             <i class="bi bi-person-fill"></i>
             <span class="mx-2">Perfil</span>
           </li>
-          <li href="" class="nav-link">
-            <i class="bi bi-gear-fill"></i>
-            <span class="mx-2">Configuración</span>
-          </li>
           <li href="#" class="nav-link">
             <i class="bi bi-question-circle"></i>
             <span class="mx-2">Ayuda</span>
           </li>
         </ul>
-        <span href="#" class="nav-link h4 w-100 mb-5">
-          <a href=""><i class="bx bxl-instagram px-2 text-white"></i></a>
-          <a href=""><i class="bx bxl-twitter px-2 text-white"></i></a>
-          <a href=""><i class="bx bxl-facebook text-white"></i></a>
+        <span class="nav-link h4 w-100">
+          <a href=""><i class="bi bi-box-arrow-left px-2 text-white"></i></a>
         </span>
       </div>
       <div class="my-container active-cont">
         <nav class="navbar navbar-dark bg-dark px-5">
           <a class="btn border-0" id="menu-btn"><i><img width="30px" src="src\assets\img\descarga.png" alt="" /></i></a>
+          <div>
+            <p class="h1">Bienvenid@ Inspertor!</p>
+          </div>
           <img src="src\assets\img\logo-user.png" width="40px" />
         </nav>
-        <div>
-          <p class="h1">Bienvenido Inspertor!</p>
-        </div>
-        <div class="row row-cols-1 row-cols-md-2 g-4" style={{ width: "80%" }}>
+        <div class="row row-cols-1 row-cols-md-2" style={{ width: "80%" }}>
           <div class="col">
             <div class="card" style={{ width: "18rem" }}>
-              <img src="src\assets\img\descarga.png" class="card-img-top" alt="..." />
+              <img src="src\assets\img\foto3.jpeg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Buscar dominio:</h5>
-                <p class="card-text">Verifique si un vehiculo está para funcionar como transporte de personas.</p>
+                <p class="card-text">Verifique si un vehiculo está autorizado para funcionar como transporte de personas.</p>
               </div>
-              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Verificar
-              </button>
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" 
-                aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Dominio</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      ...
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Understood</button>
+              <div>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#dominio">
+                  Verificar
+                </button>
+                <div class="modal fade" id="dominio" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Dominio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label">Ingrese el domoninio del vehiculo:</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ABC-123 | AB-123-CD" />
+                        </div>
+                        <button type="button" class="btn btn-success">Verificar</button>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -76,15 +75,15 @@ function App() {
           </div>
           <div class="col">
             <div class="card" style={{ width: "18rem" }}>
-              <img src="src\assets\img\descarga.png" class="card-img-top" alt="..." />
+              <img src="src\assets\img\foto1.jpeg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Realizar un denuncia:</h5>
-                <p class="card-text">Complete este formulario si desea notificarde que hay un vehiculo con pedido de secuestro.</p>
+                <p class="card-text">Complete este formulario si desea notificar que hay un vehiculo con pedido de retiro de la via publica.</p>
                 <div>
-                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#denuncia">
                     Denunciar
                   </button>
-                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1"
+                  <div class="modal fade" id="denuncia" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1"
                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
@@ -102,8 +101,7 @@ function App() {
                               top: "10px",
                               position: "relative",
                             }}
-                            name="categoria"
-                          >
+                            name="categoria">
                             <option selected>Selecciona una opción.</option>
                             <option value="1">Alfa Romeo</option>
                             <option value="2">Audi</option>
@@ -113,6 +111,10 @@ function App() {
                             <option value="6">Fiat</option>
                             <option value="7">Ford</option>
                           </select>
+                        </div>
+                        <div class="modal-body">
+                          <label for="exampleFormControlInput1" class="form-label">Ingrese el domoninio del vehiculo:</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ABC-123 | AB-123-CD" />
                         </div>
                         <div class="modal-body">
                           <label htmlFor="exampleColorInput" class="form-label">Indique el color del vehiculo:</label>
